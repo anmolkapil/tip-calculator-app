@@ -64,11 +64,9 @@ function calc(){
 
 resetBtn.addEventListener("click", reset);
 function reset(){
-    tip = amt = ppl = 0;
-    for(radio in tips){
-        if(tips[radio].checked) 
-            document.querySelector('input[name="tip"]:checked').checked = false;
-    }
+    tip = 15;
+    amt = ppl = 0;
+    document.getElementById("tip-15").checked = true;
     peopleInput.classList.remove("error");
     errMsg.style.visibility = "hidden";
     resetBtn.classList.add("gray");
