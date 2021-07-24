@@ -55,6 +55,7 @@ peopleInput.addEventListener("input", ()=>{
 });
 
 function calc(){
+    resetBtn.disabled = false;
     resetBtn.classList.remove("gray");
     let totalTip = (tip*amt)/(100);
     let totalAmt = amt + totalTip;
@@ -70,6 +71,7 @@ function reset(){
     peopleInput.classList.remove("error");
     errMsg.style.visibility = "hidden";
     resetBtn.classList.add("gray");
+    resetBtn.disabled = true;
     billInput.value = "";
     peopleInput.value = "";
     customTip.value = "";
