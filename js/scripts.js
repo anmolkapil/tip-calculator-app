@@ -64,6 +64,7 @@ function calc(){
 
 resetBtn.addEventListener("click", reset);
 function reset(){
+    tip = amt = ppl = 0;
     for(radio in tips){
         if(tips[radio].checked) 
             document.querySelector('input[name="tip"]:checked').checked = false;
