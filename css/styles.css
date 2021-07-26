@@ -265,4 +265,9 @@ h4 {
     .people-selector input {
         margin-bottom: 1em;
     }
+    
+    .tip-selector {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
 }
